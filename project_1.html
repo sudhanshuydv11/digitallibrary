@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/form.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="style.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Jumbotron Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="jumbotron.css" rel="stylesheet">
+    </head>
+    <body style="background-color:#FBFFE0">
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="navbar navbar-expand-lg navbar-light bg-light"> 
+            <button type="submit" class="btn">Syllabus  </button>
+            <form action="/book" method="post">
+                <button type="submit" class="btn">Books  </button>
+            </form>             
+            <button type="submit" class="btn">Previous year papers</button>             
+            <div class="collapse navbar-collapse text-center" id="navbarToggler45"> 
+                <ul class="navbar-nav mt-2 mt-lg-0 text-right offset-8"> 
+                    <button onclick="form1('login')" style="background-color:white;border:2px solid #4CAF50;border-radius:8px">
+                        <a class="nav-link" href="#">Login</a>
+                    </button>                     
+                    &nbsp;&nbsp;
+                    <button onclick="form1('signup')" style=" background-color: white;border:2px solid #4CAF50;border-radius:8px">
+                        <a class="nav-link pt-2 position-relative" href="#">Signup</a>
+                    </button>                     
+                </ul>                 
+                <form class="form-inline my-2 my-lg-0"> 
+</form>                 
+            </div>
+        </div>
+        <div class="jumbotron" style="background-image:url(books_bg.jpg)">
+            <div class="container">
+                <h1 class="display-3 w-auto"><u><b class="text-monospace text-white"><b><u>Electronics and Communication</u></b></b></u></h1>
+            </div>
+            <p style="color:white"><b>Digital Library</b></p>
+        </div>
+        <div class="container">
+            <!-- Example row of columns -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="col-md-3"> 
+                        <a href="#"> 
+                            <img src="s&amp;s.jpg" alt="" style="width:260px;height:337px"> 
+                        </a>                         
+                    </div>
+                    <p><br></p>
+                    <p class="text-center">SIGNALS AND SYSTEM</p>
+                    <p class="text-left">AUTHOR: <i>OPPENHEIM, WILLSKY,HAMID</i></p>
+                    <p></p>
+                    <form action="/book/s&s" method="post">
+                        <button style="border:1px solid black" type="submit" class="btn btn-light">Download</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-3"> 
+                        <a href="#"> 
+                            <img src="morris mano.jpg" alt="" style="width:260px;height:337px;"> 
+                        </a>                         
+                    </div>
+                    <p>&nbsp;</p>
+                    <p class="text-center">DIGITAL DESIGN</p>
+                    <p class="text-left">AUTHOR: <i>M. MORRIS MANO</i></p>
+                    <p></p>
+                    <form action="/book/mmmano" method="post">
+                        <button style="border:1px solid black" type="submit" class="btn btn-light">Download</button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="col-md-3"> 
+                        <a href="#"> 
+                            <img src="digital communication.jpg" alt=""> 
+                        </a>                         
+                    </div>
+                    <p><br></p>
+                    <p>DIGITAL COMMUNICATION SYSTEMS</p>
+                    <p>AUTHOR: <i>SIMON HAYKIN</i></p>
+                    <p></p>
+                    <form action="/book/shaykin" method="post">
+                        <button type="submit" class="btn btn-light" style="border:1px solid black">Download</button>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <p>© Company 2017</p>
+            </footer>
+        </div>         
+        <!-- /form -->
+        <div id="lform" class="bg" style="display: none">
+            <div class="pa" style="background-color:white;width:25%;height:70%;">
+                <button onclick="closef()" style="margin-left:290px" class="btn btn-light">X</button>
+                <h1 id="formh1" style="text-align: center;border-radius: 16px;">LOGIN</h1> 
+                <div class="form-group"> 
+                    <label for="exampleInputEmail1">Email address</label>                     
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"> 
+                </div>                 
+                <div class="form-group"> 
+                    <label for="exampleInputPassword1">Password</label>                     
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> 
+                </div>
+                <div id="cpass" class="form-group"> 
+                    <label for="exampleInputPassword2">Confirm Password</label>                     
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password"> 
+                </div>                 
+                <button id="formbtn" onclick="closef()" type="submit" class="btn btn-primary">Login</button>                 
+            </div>
+        </div>
+        <!-- /container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script>
+
+function closef(){
+                document.getElementById("lform").style.display="none";
+            }
+
+           function form1(x)
+            {
+ 
+                document.getElementById("lform").style.display="";
+                if(x=="signup")
+                {
+                    document.getElementById("formh1").innerHTML="SIGNUP";
+                    document.getElementById("cpass").style.display="";
+                document.getElementById("formbtn").innerHTML="Create Account";
+                }
+                else
+                {
+                    document.getElementById("formh1").innerHTML="LOGIN";
+                    document.getElementById("cpass").style.display="none";
+                    document.getElementById("formbtn").innerHTML="Login";
+
+                }
+       
+            }
+            
+
+
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

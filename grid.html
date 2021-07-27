@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Grid Template for Bootstrap</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="grid.css" rel="stylesheet">
+    </head>
+    <body style="background-color:#FBFFE0">
+        <div class="container">
+            <h1 style="color:white;text-align:center;border-radius:16px" class="bg-dark"><b>Subject</b></h1>
+            <div class="row">
+                <div class="col">
+                    <button id="awp" type="button" onclick="myfunc(id)" class="btn btn-light btn-lg bg-white">Antenna and wave propagation</button>                     
+                </div>
+                <div class="col">
+                    <button id="dcs" onclick="myfunc(id)" type="button" class="btn btn-light btn-lg">Digital circuit systems</button>
+                </div>
+                <div class="col">
+                    <button id="dc" onclick="myfunc(id)" type="button" class="btn btn-light btn-lg">Digital communication</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="dsp" type="button" onclick="myfunc(id)" class="btn btn-light btn-lg">Digital signal processing</button>
+                </div>
+                <div class="col">
+                    <button id="emft" type="button" onclick="myfunc(id)" class="btn btn-light btn-lg">Electromagnetic field theory</button>
+                </div>
+                <div class="col">
+                    <button id="e" type="button" onclick="myfunc(id)" class="btn btn-light btn-lg">Electronics
+</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <button id="vlsi" type="button" class="btn btn-light btn-lg" onclick="myfunc(id)">VLSI
+</button>
+                </div>
+            </div>
+        </div>
+        <div id="b_awp" style="display:none;margin-top:150px" class="container">
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/joel.jfif" style="width:260px;height:337px;">
+                <form action="/book/hallas" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Practical Antenna and Design,<i>  JOEL R.HALLAS</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/balanis.jfif" style="width:260px;height:337px;">
+                <form action="/book/balanis" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Antena Theory Analysis and Design,<i>  CONSTANTINE A. BALANIS</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>
+        <div id="b_dcs" class="container" style="margin-top:150px;display:none">
+            <div class="row pg-empty-placeholder">
+                <img src="morris mano.jpg" style="width:260px;height:337px;">
+                <form action="/book/mmmano" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Digital Design,<i>  MORRIS M. MANO</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>
+        <div id="b_dc" class="container" style="margin-top:150px;display:none">
+            <div class="row pg-empty-placeholder">
+                <img src="digital communication.jpg" style="width:260px;height:337px;">
+                <form action="/book/shaykin" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Digital Communication,<i>  SIMON S. HAYKIN</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/schaum.jpg" style="width:260px;height:337px;">
+                <form action="/book/schaum" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Digital Communication,<i>  SCHAUM</i> </h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>
+        <div id="b_dsp" class="container" style="margin-top:150px;display:none">
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/dsp oppenheim.jfif" style="width:260px;height:337px;">
+                <form action="/book/oppenheim" method="post"> 
+                    <button type="submit" style="color:black" class="btn btn-link"> 
+                        <h4>Digital Signal Processing,<i>  OPPENHEIM</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/sanjit.jfif" style="width:260px;height:337px;">
+                <form action="/book/skmitra" method="post"> 
+                    <button type="submit" style="color:black" class="btn btn-link"> 
+                        <h4>Digital Signal Processing<i>SANJIT K. MITRA</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>
+        <div id="b_emft" class="container" style="margin-top:150px;display:none">
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/sadiku.png" style="width:260px;height:337px;">
+                <form action="/book/sadiku" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Fundamentals of Electric Circuits,<i>  MATTHEW SADIKU</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>
+        <div id="b_e" class="container" style="margin-top:150px;display:none">
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/sedra.jfif" style="width:260px;height:337px;">
+                <form action="/book/sedrasmith" method="post"> 
+                    <button type="submit" style="color:black" class="btn btn-link"> 
+                        <h4>Microelectronics Circuits,<i>  SEDRA K.C. SMITH</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/grabel.jfif" style="width:260px;height:337px;">
+                <form action="/book/millmangrabel" method="post"> 
+                    <button type="submit" style="color:black" class="btn btn-link">
+                        <h4>Microelectronics,<i>  MILLMAN,GRABEL</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>
+        <div id="b_vlsi" class="container" style="margin-top:150px;display:none">
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/razavi.jfif" style="width:260px;height:337px;"> 
+                <form action="/book/behzadrazavi" method="post"> 
+                    <button type="submit" style="color:black" class="btn btn-link"> 
+                        <h4>Design of Analog CMOS,<i>  BEHZAD RAZAVI</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder">
+                <img src="/pics/weste.jpg" style="width:260px;height:337px;">
+                <form action="/book/westeharris" method="post">
+                    <button type="submit" style="color:black" class="btn btn-link"> 
+                        <h4>CMOS VLSI Design,<i>  WESTE,HARRIS</i></h4>
+                    </button>
+                </form>
+            </div>
+            <div class="row pg-empty-placeholder"></div>
+            <div class="row pg-empty-placeholder"></div>
+        </div>         
+        <!-- /container -->
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script>
+            var ar="";
+            function myfunc(y)
+            {
+                if(ar!=y)
+              {
+                  if(ar.length!=0){
+                document.getElementById(ar).className="btn btn-light btn-lg";
+                document.getElementById("b_"+ar).style.display="none";}
+
+                document.getElementById(y).className="btn btn-primary btn-lg";
+              document.getElementById("b_"+y).style.display="";
+              
+
+             ar=y;}
+              else
+              {
+                document.getElementById(y).className="btn btn-light btn-lg";
+                document.getElementById("b_"+y).style.display="none";
+                ar="";
+             }
+            }
+        </script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>
